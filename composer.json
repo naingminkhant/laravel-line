@@ -1,0 +1,54 @@
+{
+      "name": "arga/laravel-line",
+      "description": "An easy to use social called LINE in Laravel.",
+      "keywords": [
+        "arga",
+        "laravel-line",
+        "laravel",
+        "line",
+        "social"
+      ],
+      "type": "library",
+      "license": "MIT",
+      "authors": [
+        {
+          "name": "Naing Min Khant",
+          "email": "naingminkhant.cm@gmail.com"
+        }
+      ],
+      "require": {
+        "php": "^7.2",
+        "illuminate/support": "~5.8.0|^6.0|^7.0",
+        "laravel/helpers": "^1.1",
+        "guzzlehttp/guzzle": "~6.2",
+        "ext-json": "*"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^8.0"
+      },
+      "autoload": {
+        "psr-4": {
+          "Arga\\LaravelLine\\": "src/"
+        }
+      },
+      "autoload-dev": {
+        "psr-4": {
+          "Arga\\LaravelLine\\": "tests"
+        }
+      },
+      "config": {
+        "sort-packages": true
+      },
+      "extra": {
+        "laravel": {
+          "providers": [
+            "Arga\\LaravelLine\\LaravelLineServiceProvider"
+          ],
+          "aliases": {
+            "LaravelLine": "Arga\\LaravelLine\\Facades\\LaravelLine"
+          }
+        }
+      },
+      "minimum-stability": "dev",
+      "prefer-stable": true
+}
