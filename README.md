@@ -4,7 +4,7 @@ This package was created for my project and made it easier for others.
 
 ### Installation
 ``` bash
-$ composer require arga/laravel-line:^1.0
+$ composer require arga/laravel-line
 ```
 
 To publish the config settings:
